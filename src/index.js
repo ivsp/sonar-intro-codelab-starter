@@ -17,10 +17,9 @@ export function sortAnimals() {
 
   //This will trigger a Security Hotspot warning
   Math.floor(2 * Math.random());
-  if (animalsData.length % 2 === 1) {
+  if (animalsData.length >= 2 && animalsData.length % 2 === 1) {
     //This will trigger a Code Smell
     animalsData.splice(1, 1);
   }
-
   return animalsData;
 }
